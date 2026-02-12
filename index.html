@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NAVI 2.0</title>
+  <link rel="stylesheet" href="./css/app.css?v=navi2.0" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-left" style="gap:10px; flex-wrap:wrap;">
+      <span id="navSpacesWrap" class="nav-wrap">
+        <span id="subspaceChain" class="subjournal-chain"></span>
+        <button id="btnAddSubspace" class="btn" title="Додати підпростір" style="width:42px;height:42px;padding:0;margin-left:6px;">＋</button>
+      </span>
+
+      <span id="navJournalsWrap" class="nav-wrap">
+        <span id="subjournalChain" class="subjournal-chain"></span>
+        <button id="btnAddSubjournal" class="btn" title="Додати піджурнал" style="width:42px;height:42px;padding:0;margin-left:6px;">＋</button>
+      </span>
+    </div>
+  </header>
+
+  <!-- Shared modal for ui.js modalOpen() -->
+  <div id="modalBackdrop" class="backdrop" style="display:none">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Дія</h3>
+      <div id="modalBody" class="modal-body"></div>
+      <div id="modalActions" class="modal-actions"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/app.js?v=navi2.0"></script>
+</body>
+</html>
